@@ -48,3 +48,45 @@ h1 {
     font-weight: bold;
     color: #555;
 }
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .card span {
+        font-size: 0.85em;
+    }
+}
